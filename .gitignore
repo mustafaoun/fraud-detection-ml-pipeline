@@ -1,0 +1,40 @@
+# Internal working notes
+PROJECT_STUDY_GUIDE.md
+venv.md
+
+# Data: raw, database, and derived training artifacts are local only.
+# Keep the small setup guide so the repository remains reproducible.
+data/*
+!data/README.md
+
+# Persisted binaries are recreated by the notebook pipeline.
+models/*
+!models/README.md
+
+# Keep portfolio-ready SHAP images; exclude derived arrays and local run output.
+reports/artifacts/shap/*.npz
+reports/artifacts/shap/*.json
+tmp/
+src/test_query.py
+
+# Notebook and Python tooling
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# Environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,30 @@
+# Core data & DB
+pandas==2.1.4
+duckdb==0.10.0
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# EDA & Audit
+cleanlab==2.6.2
+
+# Preprocessing & Imbalance
+scikit-learn==1.3.2
+imbalanced-learn==0.12.0
+
+# Models
+xgboost==2.0.3
+
+# Explainability
+shap==0.44.0
+
+# Hyperparameter tuning
+optuna==3.4.0
+
+# Notebook support (for VS Code)
+jupyter==1.0.0
+ipykernel==6.26.0
+
+# Optional: progress bars, utilities
+tqdm==4.66.1
